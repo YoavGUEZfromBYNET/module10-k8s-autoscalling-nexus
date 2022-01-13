@@ -23,10 +23,6 @@ spec:
           matchLabels:
             app: yg-module10
       containers:
-      - args:
-        - --cert-dir=/tmp
-        - --secure-port=4443
-        - --kubelet-insecure-tls
       - name: nexus1  
         image: nexus1:8123/104194/module6-dockerbuildmaven-sonarqube:yg-nexus-v.9
         imagePullPolicy: IfNotPresent
