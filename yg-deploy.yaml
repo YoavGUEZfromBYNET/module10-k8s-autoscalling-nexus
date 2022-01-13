@@ -15,13 +15,13 @@ spec:
     spec:
       imagePullSecrets:
       - name: regsecret
-      topologySpreadConstraints:
-      - maxSkew: 5
-        topologyKey: kubernetes.io/hostname
-        whenUnsatisfiable: DoNotSchedule
-        labelSelector:
-          matchLabels:
-            app: yg-module10
+     #  topologySpreadConstraints:
+     #  - maxSkew: 5
+     #    topologyKey: kubernetes.io/hostname
+     #    whenUnsatisfiable: DoNotSchedule
+     #    labelSelector:
+     #      matchLabels:
+     #        app: yg-module10
       containers:
       - name: nexus1  
         image: nexus1:8123/104194/module6-dockerbuildmaven-sonarqube:yg-nexus-v.9
